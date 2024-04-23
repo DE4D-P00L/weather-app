@@ -21,7 +21,7 @@ const Home = () => {
     try {
       setLoading(true);
       const response = await axios.get(
-        `http://api.weatherapi.com/v1/current.json?key=${
+        `https://api.weatherapi.com/v1/current.json?key=${
           import.meta.env.VITE_WEATHER_API
         }&q=${debounce}&aqi=yes`
       );
